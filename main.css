@@ -1,0 +1,152 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}/* CSS Document */
+
+body{
+	background-image:url(images/fresh_snow.png);
+}
+
+background-image{
+	opacity: .60;
+}
+
+h2{
+	font-size:24px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-align:center;
+}
+
+.umbrella {
+	background-image: url(images/col_pic1.jpg);
+}
+
+.umbrella{
+	margin-top: 20px;
+}
+.umbrella .thumbnail{
+	padding: 0;
+	width: 250px;
+	text-align: center;
+}
+
+. col-md-6{
+	tex-align: center;
+	margin-left: 30px;
+}
+
+.rows{
+	margin-left: 30px;
+}
+
+.jumbotron{
+	margin-top: 25px;
+}
+
+.btn btn-default{
+	text-align: center;
+}
+
+.my_content_container a {
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #000000;
+    color: #000000;
+    display: inline;
+    height: 2.5em;
+    padding: 0 1em;
+    width: 5em;       
+    text-decoration: none; 
+	background-color:#9A9A9A;
+	text-align:center;      
+}
+
+.my_content_container {
+	text-align:center;
+}
+
+.my_content_container : active {
+	background-color: #6A80BE;
+}
+
+.my_content_container : hover {
+	background-color: #6A80BE;
+}
+
+/**
+Uses.hmtl
+**/
+
+h4{
+	text-align: center;
+}
+
+.col-md-3{
+	display:block;
+	text-wrap:normal;
+}
+
+.rows{
+	display inline;
+}
+
+#uses .thumbnail  h5{
+	text-align: center;
+}
+
+#uses .thumbnail {
+	height: 289;
+	overflow:scroll;
+}
+
+/**
+Signup.hmtl
+**/
+#signup_form {
+	position: relative;
+	left: 400px;
+	top: 50px;
+}
+
+#signup h2{
+	text-align: center;
+}
+
+/** 
+Signin.html
+**/
+
+#signin h2 {
+	text-align:center;
+}
+
+#signin_form {
+	position:relative;
+	left: 400px;
+	top: 200px;
+}

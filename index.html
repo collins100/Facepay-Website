@@ -2,53 +2,92 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>FaceTransact</title>
+<title>Facepay</title>
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 
 <body>
-<div class="container">
-    <header>
-        <h2>Face Transact</h2>
-    </header>
-</div>
 
-<div id = "uberumberalla">
-<div class="umbrella"> 
-   <div class="container">
-  
-      <div class="rows">
-          <div class="col-md-6">
-           
-            <div class="thumbnail">
-             
-              <img src="images/face.jpg" width="230px" height="175px" class="img-responsive">
-              <div class="my_content_container">
-                   <a href="Signin.html">Sign-in</a>
-              </div>  <!-- end of the my_content_container div -->
-            </div>    <!-- end of the thumbnail div -->
-          </div>    <!-- end of the col-md-6 div -->
-          
-          <div class="col-md-6">
-          
-           <div class="thumbnail">
-            
-            <img src="images/face2.jpg" width="230px" height="175px" class="img-responsive">
-            <div class="my_content_container">
-                   <a href="Signup.html">Sign-up</a>
-            </div>    <!-- end of the my_content_container div -->
-           </div>     <!-- end of the thumbnail div -->
+<div class="uberumbrella">
+ 
+  <div id="pageBanner" role="banner" > 
+    <div class="logo">
+      <h1>FACEPAY</h1>
+      <div class="menu_login_container">
+        <form id="login_form" action="#" method="post" onClick="return window.Event $$ Event._inlineSubmit && Event._INlineSubmit(this,event)">
+          <input type="hidden" name="lsd" value="AVph5YOb" autocomplete="off">
+          <table cellspacing="0" role="presentation">
+            <tbody>
+              <tr>
+                <td class="html7magic">
+                  <label for="email">Email or Username</label>
+                </td>
+                <td class="html7magic">
+                  <label for="email">Password</label>
+                </td>
+             </tr>
+             <tr>
+               <td>
+                 <input type="text" class="inputtext" name="email" id="email" value tabindex="1" style"cursor: auto; background-image:none; background-position: 0% 0%; background-repeat: repeat;">
+               </td>
+               <td>
+                 <input type="password" class="inputtext" name="pass" id="pass" tabindex="2">
+               </td>
+               <td>
+                 <label class="uiButton uiButtonConfirm" id="loginbutton" for="u_0_l">
+                   <input value="Log In" tabindex="4" type="submit" id="u_0_l">
+                 </label>
+               </td>
+             </tr>
+            </tbody>
+          </table> 
+         </form>
+        </div>           <!--  end of the menu_login div    -->
+        
+      </div>         <!--  end of the lfoat_ohe div   -->     
+    </div>           <!-- end of the pagelet div   --> 
+</div>  <!--   end of uberumbrella div  -->  
+
+<div class="globalContainer">
+  <div class="container">
+    <div class="clearfix">
+      <div class="signUp_Section">
+        <div class="signUp_Header">
+          <div class="signUp_Title">Sign UP</div>
+          <div class="signUp_Message">Enjoy the convinience of online banking innovation</div>
+        </div>   <!--  end of the signUp_Header div  -->
+        <div class="signUpContainer">
+          <form>
+             <fieldset>
                
-          </div>      <!-- end of the col-md-6 div -->
-      </div>          <!-- end of the rows   div -->
-   </div>             <!--   end of the container div  -->
-</div>                <!--   end of the umbrella div   -->
+               <input type="text" name="firstname" value="First name" width="200%"> &nbsp 
+             
+               <input type="text"   name="lastname" value="Last name" width="200%"><br><br>
+              
+               <input type: "email"name="lastname" value="Email" width="200%"><br><br>
+               <input type: "email"name="lastname" value="Reenter Email" width="200%"><br><br>
+               
+               Credit Card:<br>
+               <input type: "number"><br><br>
+               Billing Address:<br>
+               <input type: "number"> &nbsp; <br><br>
+               Password:<br>
+               <input type="password" value="password"><br><br>
+               <input type="submit" style="color:#141414">
+             </fieldset>   
+          </form>
+        </div>
+      </div>     <!--  end of the signUP_Section div -->
+    </div>       <!--   end of the clearfix div  -->
+  </div>         <!--  end of the container div  -->
+</div>           <!--  end of the globalContainer div   -->
+  
 
 <div class="jumbotron">
     <div class="container">
         <h3>Facial Recognition </h3>
-        <p>Face-recognition systems have two components: an algorithm and a database. The algorithm is a computer program that takes an image of a face and deconstructs it into a series of landmarks and proportional patterns – the distance between eye centres, for example. This process of turning unique biological characteristics into quantifiable data is known as biometrics.
+        <p style="font-size:15px">Face-recognition systems have two components: an algorithm and a database. The algorithm is a computer program that takes an image of a face and deconstructs it into a series of landmarks and proportional patterns – the distance between eye centres, for example. This process of turning unique biological characteristics into quantifiable data is known as biometrics.
 while everyone has a photographable face, five percent of the population does not have a readable fingerprint.
 </p>
         <div class="my_content_container">

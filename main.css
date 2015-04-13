@@ -27,23 +27,252 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
 }/* CSS Document */
 
-body{
-	background-image:url(images/fresh_snow.png);
+body, button, input, label, select, td, textarea {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 11px;
 }
 
-background-image{
-	opacity: .60;
+body{
+	overflow-y: scroll;
+}
+
+body{
+	background: #FFFFFF;
+	color: #141823;
+	line-height: 1.28;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	direction: ltr;
+	unicode-bidi:embed;
+}
+
+.uberumbrella{
+	overflow-y: scroll;
+	background-color:#7477CE;
+}
+
+#pageBanner{
+	background-color:#7477CE;
+	min-width: 981px;
+	max-width: 84px;
+	border: 0;
+	border-bottom: 1px solid #3a5795;
+	margin-left: 10px;
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	position: relative;
+	-webkit-box-shadow: 0 2px 2px -2px;
+	padding-bottom: 1px;
+}
+
+.logo{
+	float:left;
+}
+
+menu_login_container{
+	float: right;
+	margin-right: 20px;
+}
+
+
+
+
+.uiButtonConfirm {
+	background-repeat: no-repeat;
+	background-position: -1px -147px;
+	background-color: #5b74a8;
+	border-color: #2f477a #29447e #1a356e;
+}
+
+.uiButton{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.uiButtonText, .uiButton input {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  margin: 0;
+  padding: 1px 0 2px;
+  white-space: nowrap;
+}
+
+label {
+	color: #666;
+}
+
+h1{
+	font-size: 16px;
+	color:#FFFFFF;
+	margin: 0;
+	padding: o;
+	clearfix: zoom 1;
+}
+
+form{
+	margin: 0;
+	padding: 0;
+}
+input [type="hidden" i], input [type="image" i], input [type="file" i]{
+	-webkit-appearance: initial;
+	padding: initial;
+	background-color: intial;
+	border: inital;	
+}
+
+table{
+	display: table;
+	border-collapse: separate;
+	border-color: gray;
+}
+
+t-body{
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.menu_login_container {
+	float: right;
+}
+
+.menu_login_container tr{
+	vertical-align: top;
+}
+
+tr{
+	display: table-row;
+	border-color: inherit;
+}
+
+.menu_login_container .html7magic {
+	  padding-bottom: 4px;
+}
+.menu_login_container table tr td {
+      padding: 0 0 0 14px;
+}
+
+td, td.label {
+  text-align: left;
+}
+
+.menu_login_container .html7magic label {
+  color: #fff;
+  font-weight: normal;
+  padding-left: 1px;
+}
+
+.menu_login_container #email {
+  direction: ltr;
+}
+
+.menu_login_container .inputtext, .menu_login_container .inputpassword {
+  border-color: #1d2a5b;
+  margin: 0;
+  width: 142px;
+}
+
+.inputtext, .inputpassword {
+  padding-bottom: 4px;
+}
+
+textarea, .inputtext, .inputpassword {
+  border: 1px solid #bdc7d8;
+  margin: 0;
+  padding: 3px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: rgb(250, 255, 189);
+  background-image: none;
+  color: rgb(0, 0, 0);
+}
+
+input, textarea, keygen, select, button {
+  margin: 0em;
+  font: normal normal normal 11px/normal '.HelveticaNeueDeskInterface-Regular';
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+}
+
+input, textarea, keygen, select, button, meter, progress {
+  -webkit-writing-mode: horizontal-tb;
+}
+
+#globalcontainer{
+	margin: 0 auto;
+	position: relative;
+	zoom:1;
+	min-width: 980px;
+	padding: 0;
+	outline: none;
+	margin-container: 20px;
+}
+
+
+.clearfix {
+  zoom: 1;
+}
+
+.signUp_Section {
+	float: right;
+	max-width: 400px;	
+}
+
+.signUp_Header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.signUp_Title {
+	font-size: 28px;
+	color: inherit;
+	font-family:inherit;
+	font-weight: normal;
+    white-space: nowrap;
+}
+.signUp_Message {
+    color: inherit;
+    font-size: 19px;
 }
 
 h2{
-	font-size:24px;
+	font-size:12px;
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	text-align:center;
 }
 
-.umbrella {
-	background-image: url(images/col_pic1.jpg);
+
+
+header{
+	
 }
+
+/* .umbrella {
+	background-image: url(images/col_pic1.jpg);
+}*/
 
 .umbrella{
 	margin-top: 20px;
@@ -55,8 +284,11 @@ h2{
 }
 
 . col-md-6{
-	tex-align: center;
+	text-align: center;
 	margin-left: 30px;
+	padding-top: 20px;
+	margin-top: 20px;
+	
 }
 
 .rows{
@@ -70,6 +302,7 @@ h2{
 .btn btn-default{
 	text-align: center;
 }
+
 
 .my_content_container a {
     border-bottom: 1px solid #777777;
@@ -130,7 +363,8 @@ Signup.hmtl
 #signup_form {
 	position: relative;
 	left: 400px;
-	top: 50px;
+	top: 30px;
+	
 }
 
 #signup h2{

@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Facepay</title>
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -10,12 +11,13 @@
 <body>
 
 <div class="uberumbrella">
- 
-  <div id="pageBanner" role="banner" > 
+  <div id="pageBanner" role="banner"> 
     <div class="logo">
       <h1>FACEPAY</h1>
+    </div>       <!--    end of the logo div      -->
+    
       <div class="menu_login_container">
-        <form id="login_form" action="#" method="post" onClick="return window.Event $$ Event._inlineSubmit && Event._INlineSubmit(this,event)">
+        <form id="login_form" action="#" method="post" >
           <input type="hidden" name="lsd" value="AVph5YOb" autocomplete="off">
           <table cellspacing="0" role="presentation">
             <tbody>
@@ -36,17 +38,17 @@
                </td>
                <td>
                  <label class="uiButton uiButtonConfirm" id="loginbutton" for="u_0_l">
-                   <input value="Log In" tabindex="4" type="submit" id="u_0_l">
+                   <input value="Log In" tabindex="4" type="submit" id="u_0_l" style="color:#FFFFFF;">
                  </label>
                </td>
              </tr>
             </tbody>
           </table> 
          </form>
-        </div>           <!--  end of the menu_login div    -->
+       </div>           <!--  end of the menu_login_container div    -->
         
-      </div>         <!--  end of the lfoat_ohe div   -->     
-    </div>           <!-- end of the pagelet div   --> 
+    </div>         <!--    end of the pageBanner div     -->     
+   
 </div>  <!--   end of uberumbrella div  -->  
 
 <div class="globalContainer">
@@ -54,35 +56,54 @@
     <div class="clearfix">
       <div class="signUp_Section">
         <div class="signUp_Header">
-          <div class="signUp_Title">Sign UP</div>
+          <div class="signUp_Title">Sign Up</div>
           <div class="signUp_Message">Enjoy the convinience of online banking innovation</div>
         </div>   <!--  end of the signUp_Header div  -->
         <div class="signUpContainer">
           <form>
              <fieldset>
                
-               <input type="text" name="firstname" value="First name" width="200%"> &nbsp 
+               <input type="text" class="inputForm" name="firstname" placeholder="First name"> &nbsp 
              
-               <input type="text"   name="lastname" value="Last name" width="200%"><br><br>
+               <input type="text"   class="inputForm" name="lastname" placeholder="Last name"><br><br>
               
-               <input type: "email"name="lastname" value="Email" width="200%"><br><br>
-               <input type: "email"name="lastname" value="Reenter Email" width="200%"><br><br>
+               <input type: "email" class="inputForm" name="lastname" placeholder="Email"> &nbsp 
+               <input type: "email" class="inputForm" name="lastname" placeholder="Re-enter Email"><br><br>
+               <input type: "number" class="inputForm"name="phonenumber" placeholder="Phone-number"><br><br>
                
-               Credit Card:<br>
-               <input type: "number"><br><br>
                Billing Address:<br>
-               <input type: "number"> &nbsp; <br><br>
+               <input type: "number" class="inputForm" placeholder="Street address" style="width: 95%;">  <br><br>
+               <input type: "number" class="inputForm" placeholder="Zip-code" > &nbsp; &nbsp; <input type="text" placeholder="City" class="inputForm"> <br><br>
                Password:<br>
-               <input type="password" value="password"><br><br>
-               <input type="submit" style="color:#141414">
+               <input type="password" class="inputForm" placeholder="Password"><br><br>
+               <input type="password" class="inputForm" placeholder="Re-enter password"><br><br>
+               <input type="submit" id= "submit_button" style="color:#FFFFFF; font-weight: 500;" value = "Sign Up">
              </fieldset>   
           </form>
-        </div>
-      </div>     <!--  end of the signUP_Section div -->
-    </div>       <!--   end of the clearfix div  -->
-  </div>         <!--  end of the container div  -->
-</div>           <!--  end of the globalContainer div   -->
-  
+          
+        </div>     <!--  end of the signUP_Container div -->
+        
+      </div>        <!--   end of the signUP_Section div  -->
+      <div id="faceLogin">
+          <div class="faceLogin_Header">
+            <div class="faceLogin_Title">Login with Camera</div>
+            <div class="faceLogin_Message">Login using Webcam
+            or front cameras <br> on mobile devices</div>
+          </div>    <!--     end of the faceLogin_Header  div   -->
+            <canvas id="faceBox" width=" 200" height="200" style="border:1px solid #000000; background-color:#000000;">Your browser does not support the HTML5 canvas tag.
+            </canvas>  <br><br>
+           <input type="submit" id= "submit_button" style="color:#FFFFFF; font-weight: 500;" value = "Capture"><br><br>
+          <div id="instructions">
+             <ol type="I">
+               <li>Position your face within the frame</li>
+               <li>Click the capture button then .. viola!!</li>
+             </ol>
+          </div>   <!--    end of the instructions div   -->
+      </div>      <!--      end of the faceLogin div     -->
+    </div>          <!--  end of the clearfix div  -->
+  </div>            <!--  end of the Container div   -->
+</div>              <!--   end of the globalContainer div  -->
+ 
 
 <div class="jumbotron">
     <div class="container">
@@ -91,7 +112,7 @@
 while everyone has a photographable face, five percent of the population does not have a readable fingerprint.
 </p>
         <div class="my_content_container">
-            <a href="Uses.html">Some of the uses of Facial Recognition</a>
+            <a href="Uses.html" style="font-weight: 500;">Facial Recognition Solutions</a>
         </div>    <!-- end of the my_content_container div -->
     </div>          <!--      end of the container div    -->
 </div>              <!--      end of the jumbotron div    -->

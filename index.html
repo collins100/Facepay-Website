@@ -9,115 +9,87 @@
 </head>
 
 <body>
-
-<div class="uberumbrella">
-  <div id="pageBanner" role="banner"> 
-    <div class="logo">
-      <h1>FACEPAY</h1>
-    </div>       <!--    end of the logo div      -->
-    
-      <div class="menu_login_container">
-        <form id="login_form" action="#" method="post" >
-          <input type="hidden" name="lsd" value="AVph5YOb" autocomplete="off">
-          <table cellspacing="0" role="presentation">
-            <tbody>
-              <tr>
-                <td class="html7magic">
-                  <label for="email">Email or Username</label>
-                </td>
-                <td class="html7magic">
-                  <label for="email">Password</label>
-                </td>
-             </tr>
-             <tr>
-               <td>
-                 <input type="text" class="inputtext" name="email" id="email" value tabindex="1" style"cursor: auto; background-image:none; background-position: 0% 0%; background-repeat: repeat;">
-               </td>
-               <td>
-                 <input type="password" class="inputtext" name="pass" id="pass" tabindex="2">
-               </td>
-               <td>
-                 <label class="uiButton uiButtonConfirm" id="loginbutton" for="u_0_l">
-                   <input value="Log In" tabindex="4" type="submit" id="u_0_l" style="color:#FFFFFF;">
-                 </label>
-               </td>
-             </tr>
-            </tbody>
-          </table> 
-         </form>
-       </div>           <!--  end of the menu_login_container div    -->
-        
-    </div>         <!--    end of the pageBanner div     -->     
-   
-</div>  <!--   end of uberumbrella div  -->  
-
-<div class="globalContainer">
+  <div class = "pageBanner" role="banner">
+    <div class="container">
+      <div class="logo">
+        <a href= "index.html"><h1>FACEPAY</h1></a>
+      </div>                  <!--    end of the logo div      -->
+    </div>                    <!--    end of the container div     --> 
+  </div>                      <!--    end of the pageBanner div     --> 
+  
+<main>
   <div class="container">
-    <div class="clearfix">
-      <div class="signUp_Section">
-        <div class="signUp_Header">
-          <div class="signUp_Title">Sign Up</div>
-          <div class="signUp_Message">Enjoy the convinience of online banking innovation</div>
-        </div>   <!--  end of the signUp_Header div  -->
-        <div class="signUpContainer">
-          <form>
-             <fieldset>
-               
-               <input type="text" class="inputForm" name="firstname" placeholder="First name"> &nbsp 
-             
-               <input type="text"   class="inputForm" name="lastname" placeholder="Last name"><br><br>
-              
-               <input type: "email" class="inputForm" name="lastname" placeholder="Email"> &nbsp 
-               <input type: "email" class="inputForm" name="lastname" placeholder="Re-enter Email"><br><br>
-               <input type: "number" class="inputForm"name="phonenumber" placeholder="Phone-number"><br><br>
-               
-               Billing Address:<br>
-               <input type: "number" class="inputForm" placeholder="Street address" style="width: 95%;">  <br><br>
-               <input type: "number" class="inputForm" placeholder="Zip-code" > &nbsp; &nbsp; <input type="text" placeholder="City" class="inputForm"> <br><br>
-               Password:<br>
-               <input type="password" class="inputForm" placeholder="Password"><br><br>
-               <input type="password" class="inputForm" placeholder="Re-enter password"><br><br>
-               <input type="submit" id= "submit_button" style="color:#FFFFFF; font-weight: 500;" value = "Sign Up">
-             </fieldset>   
-          </form>
-          
-        </div>     <!--  end of the signUP_Container div -->
-        
-      </div>        <!--   end of the signUP_Section div  -->
-      <div id="faceLogin">
+    <div class="faceLogin">
           <div class="faceLogin_Header">
             <div class="faceLogin_Title">Login with Camera</div>
             <div class="faceLogin_Message">Login using Webcam
             or front cameras <br> on mobile devices</div>
-          </div>    <!--     end of the faceLogin_Header  div   -->
-            <canvas id="faceBox" width=" 200" height="200" style="border:1px solid #000000; background-color:#000000;">Your browser does not support the HTML5 canvas tag.
-            </canvas>  <br><br>
-           <input type="submit" id= "submit_button" style="color:#FFFFFF; font-weight: 500;" value = "Capture"><br><br>
+          </div>              <!--     end of the faceLogin_Header  div   -->
+          <video autoplay id="videoElement">
+          </video><br><br>
+            
+           <button id= "submit_button" style="color:#FFFFFF; font-weight: 500;" >Capture</button><br><br>
           <div id="instructions">
              <ol type="I">
                <li>Position your face within the frame</li>
-               <li>Click the capture button then .. viola!!</li>
+               <li>Click the capture button</li>
              </ol>
-          </div>   <!--    end of the instructions div   -->
-      </div>      <!--      end of the faceLogin div     -->
-    </div>          <!--  end of the clearfix div  -->
-  </div>            <!--  end of the Container div   -->
-</div>              <!--   end of the globalContainer div  -->
+          </div>              <!--    end of the instructions div   -->
+          <div class="menu_Login">
+           <!--<h4> Or Log In Manually</h4>
+            <form class="loginForm"><br><br>
+              <input type="Email" class="inputForm" name="email" placeholder="Email or Username"> &nbsp
+              <input type="Password" class="inputForm" name="password" placeholder="Password">  &nbsp
+              <input type="submit" id="submit_button" name"submit" style="font-weight:500;"value="Log In">
+            </form>-->
+          </div>
+      </div>                  <!--      end of the faceLogin div     -->
+      
+    <div class="signUp_Section">
+      <div class="signUp_Header">
+        <div class="signUp_Title">Sign Up</div>
+        <div class="signUp_Message">Enjoy the convenience of online <br>banking innovation</div>
+      </div>                 <!--  end of the signUp_Header div  -->
+        <div class="signUpContainer">
+          <form>
+             <fieldset>
+               
+               <input type="text" class="inputForm" name="firstname" placeholder="First name"> &nbsp; &nbsp; 
+             
+               <input type="text"   class="inputForm" name="lastname" placeholder="Last name"><br><br>
+              
+               <input type: "email" class="inputForm" name="lastname" placeholder="Email" size = "36"> <br><br> 
+               <input type: "email" class="inputForm" name="lastname" placeholder="Re-enter Email" size = "36"><br>
+               Phone-Number:<br>
+               <input type: "number" class="inputForm"name="phonenumber" size="3"> &nbsp; &nbsp; <input type: "number" class="inputForm"name="phonenumber" size="10"><br>
+               
+               Password:<br>
+               <input type="password" class="inputForm" placeholder="Enter Password"><br><br>
+               <input type="password" class="inputForm" placeholder="Re-enter password"><br><br>
+               <a href="Signup.html" class="btn" id="submit_button" style="font-weight:500; padding: 2px 2px;">Sign Up</a>
+             </fieldset>   
+          </form>
+        </div>                <!--  end of the signUP_Container div -->
+    </div>                    <!--   end of the signUP_Section div  -->
+    
+    
+  </div>                      <!--    end of the container div       --> 
  
-
 <div class="jumbotron">
-    <div class="container">
-        <h3>Facial Recognition </h3>
+   <div class="container">
+      <h3>Facial Recognition </h3>
         <p style="font-size:15px">Face-recognition systems have two components: an algorithm and a database. The algorithm is a computer program that takes an image of a face and deconstructs it into a series of landmarks and proportional patterns – the distance between eye centres, for example. This process of turning unique biological characteristics into quantifiable data is known as biometrics.
 while everyone has a photographable face, five percent of the population does not have a readable fingerprint.
 </p>
         <div class="my_content_container">
-            <a href="Uses.html" style="font-weight: 500;">Facial Recognition Solutions</a>
+            <a href="Uses.html" class="btn" id="submit_button" style="font-weight: 500; padding: 4px 4px;">Facepay Solutions</a>
         </div>    <!-- end of the my_content_container div -->
     </div>          <!--      end of the container div    -->
 </div>              <!--      end of the jumbotron div    -->
-</div>               <!--          end of uberumbrella div   -->
+</main>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="facialrec.js"></script>
 </body>
 </html>

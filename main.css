@@ -47,23 +47,26 @@ body{
 	unicode-bidi:embed;
 }
 
-.uberumbrella{
+main{
+	margin:0 auto;
+	background:url(images/bg-slide3.jpg);
+	
+}
+
+.pageBanner{
 	overflow-y: scroll;
-	background-color:#305CBA;
+	background-color:#252F49;
 	box-shadow: 0 2px 2px -2px;
 	-webkit-box-shadow: 0 2px 2px -2px;
 	-moz-box-shadow: 0 2px 2px -2px;
 	border-bottom: 1px solid #595555;
+	margin: 0 auto;
 }
 
-#pageBanner{
-	min-width: 981px;
-	max-width: 84px;
+.pageBanner{
+	max-height: 84px;
 	border: 0;
-	
-	margin-left: 10px;
 	position: relative;
-	
 	padding-bottom: 10px;
 }
 
@@ -72,15 +75,14 @@ body{
 	font-size: 36px;
 	font-weight: bold;
 	color:#FFFFFF;
-	margin-left: 19px;
+	margin-left: 49px;
+	
 }
 
 .menu_login_container{
-	float: right;
-	margin-top: 10px;
-	margin-right: 20px;
-	position: relative;
-	left: 210px;
+	float: left;
+	/*position: relative;
+	left: 210px;*/
 }
 
 
@@ -175,7 +177,7 @@ td, td.label {
 }
 
 .menu_login_container .html7magic label {
-  color: #fff;
+  color: #000000;
   font-weight: normal;
   padding-left: 1px;
 }
@@ -239,13 +241,25 @@ input, textarea, keygen, select, button, meter, progress {
 }
 
 
-.clearfix {
-  zoom: 1;
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: block;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix{
+	*zoom: 1;
 }
 
 .signUp_Section {
 	float: right;
-	max-width: 400px;	
+	max-width: 400px;
+	position: relative;
+	left:-50px;
 }
 
 .signUp_Header {
@@ -294,9 +308,11 @@ input, textarea, keygen, select, button, meter, progress {
     border-top-width: 1px;`
 }
 
-#faceLogin{
+.faceLogin{
 	float: left;
 	margin-top: 20px;
+	position: relative;
+	left: 50px;
 }
 
 .faceLogin_Title{
@@ -316,6 +332,12 @@ input, textarea, keygen, select, button, meter, progress {
 
 .faceLogin_Header{
 	padding-bottom: 20px;
+}
+
+.faceLogin h4{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 h2{
@@ -341,15 +363,27 @@ h2{
 #submit_button{
 	border-radius: 3px;
 	font-weight: 300;
-	background-color: #5E71B0;
+	background-color: #252F49;
 	color:#FFFFFF;
+}
+
+#videoElement{
+	width: 200px;
+	height: 200px;
+	background-color: #666666;
 }
 
 #instructions{
 	margin-left: 19px;
 }
+
+.loginForm{
+	display: inline;
+	padding: right: 5px;
+}
+
 .jumbotron{
-	margin-top: 0px;
+	margin-top: 10px;
 	padding: 0;
 }
 
@@ -410,35 +444,69 @@ h4{
 	display inline;
 }
 
-#uses .thumbnail  h5{
+.uses .thumbnail  h5{
 	text-align: center;
 }
 
-#uses .thumbnail {
+.uses .thumbnail {
 	height: 289;
 	overflow:scroll;
+	/*background: url(images/bg-slide3.jpg);*/
 }
 
+main{
+	background:url(images/bg-slide3.jpg);
+}
 
 /**
 Signup.hmtl
 **/
-#signup_form {
+.faceSignUp_Message {
+	position:relative;
+	left: 168px;
+}
+
+.faceCapture{
 	position: relative;
-	left: 400px;
-	top: 30px;
-	
+	left: 168px;
 }
 
-#signup h2{
-	text-align: center;
+.signupPage p{
+	font-weight: 300;
+	font-style:italic;
 }
 
+.signup_form{
+	margin-top: 15px;
+}
+
+.signupPage h2{
+	text-align: left;
+}
+
+.faceSignUp_Title{
+	font-size: 28px;
+	font-weight: 700;
+	color: inherit;
+	font-family:inherit;
+	font-weight: normal;
+    white-space: nowrap;
+}
+
+.faceSignUp_Message{
+	color: inherit;
+    font-size: 15px;
+	font-weight:500;
+}
+
+.signup_form > placeholder{
+	text-align:center;
+}
 /** 
 Signin.html
 **/
 
-#signin h2 {
+/*#signin h2 {
 	text-align:center;
 }
 

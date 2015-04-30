@@ -8,29 +8,76 @@
 </head>
 
 <body>
-<div id="signup">
-               <h2>Account Sign-up</h2>
-            <form id="signup_form">
+<div class = "pageBanner" role="banner">
+    <div class="container">
+      <div class="logo">
+        <a href= "index.html"><h1>FACEPAY</h1></a>
+      </div>                  <!--    end of the logo div      -->
+    </div>                    <!--    end of the container div     --> 
+  </div>                      <!--    end of the pageBanner div     --> 
+  
+<main> 
+<div class="container">
+  <div class="rows">
+   <div class="col-md-6">
+    <div class="signupPage">
+               <h2 style="font-size:26px;font-weight: bold;">Account Sign-up</h2>
+               <div class="signUp_Message">Enjoy the convenience of online banking innovation</div>
+                   <p> You can link a preferred credit-card or a bank account to your facepay account to enable your convenient banking and transactions alternatives.</p>
+                   
+            <form class="signup_form">
                <fieldset>
-               First name:<br>
-               <input type="text" name="firstname"> <br>
-               Last: name: <br>
-               <input type="text"   name="lastname"><br>
-               Email Address:<br>
-               <input type: "email"><br>
-               Phone Number:<br>
-               <input type: "number"><br>
-               Credit Card:<br>
-               <input type: "number"><br>
+               Name on the credit/debit card:<br>
+               <input type="text" class="inputForm" name="firstname" placeholder="first name"> &nbsp &nbsp
+       
+               <input type="text" class="inputForm" name="lastname" placeholder="last name"><br><br>
+               
+               <img src="images/credit card.jpg" class="img-responsive" >
+               Credit Card Number:<br>
+               <input type: "number" class="inputForm" placeholder="credit card number" size="35"> &nbsp &nbsp<input type: "number" class="inputForm" placeholder="11/15" size="5"><br><br>
                Billing Address:<br>
-               <input type: "number"><br>
-               Set Password:<br>
-               <input type="password"><br><br>
-               <input type="submit" style="color:#141414">
+               <input type: "address" class="inputForm" placeholder="street address" size="35"><br><br>
+               <input type: "number" class="inputForm" placeholder="zip code" size= "8"> &nbsp &nbsp  <input type:"text" class="inputForm" placeholder="city" size="10"> <br><br>     
+               <input type="submit" id=submit_button style="color:#FFF8F9" value="Sign-Up">
              </fieldset>      
          </form>
- </div>         <!--       end of the signup div-->
- 
+      </div>    <!--     end of the signup div     -->
+    </div>       <!-- end of the col-md-div  -->
+    
+<div class = "col-md-6">
+<div class="faceSignUp">
+            <h2 style="font-size:26px;font-weight: bold;">Account Sign-up</h2>
+            <div class="faceSignUp_Message">Take a mug shot </div>
+      <div class="faceCapture">                    
+          <video autoplay id="videoElement">
+          </video><br><br>
+              
+           <button id= "submit_button" style="color:#FFFFFF; font-weight: 500;" >Capture</button><br><br>
+          <div id="instructions">
+             <ol type="I">
+               <li>Position your face within the frame</li>
+               <li>Click the capture button</li>
+             </ol>
+          </div>              <!--    end of the instructions div   -->
+       </div>                <!--    end of the faceCapture div   -->
+ </div>                      <!--     end of the faceSignUP div   -->
+</div>                       <!--   end of the col div    -->
+</div>         <!--    end of the rows div-->
+</div>         <!--       end of the div class container-->
+</main>
+
+ <div class="jumbotron">
+   <div class="container">
+      <h3>Facial Recognition </h3>
+        <p style="font-size:15px">Face-recognition systems have two components: an algorithm and a database. The algorithm is a computer program that takes an image of a face and deconstructs it into a series of landmarks and proportional patterns – the distance between eye centres, for example. This process of turning unique biological characteristics into quantifiable data is known as biometrics.
+while everyone has a photographable face, five percent of the population does not have a readable fingerprint.
+</p>
+        <div class="my_content_container">
+            <a href="Uses.html" class="btn" id="submit_button" style="font-weight: 500; padding: 4px 4px;">Facepay Solutions</a>
+       </div>    <!-- end of the my_content_container div -->
+    </div>          <!--      end of the container div    -->
+</div>              <!--      end of the jumbotron div    -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>

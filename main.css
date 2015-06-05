@@ -71,7 +71,7 @@ main{
 }
 
 .logo h1{
-	float:left;
+	text-align: center;
 	font-size: 36px;
 	font-weight: bold;
 	color:#FFFFFF;
@@ -515,3 +515,295 @@ Signin.html
 	left: 400px;
 	top: 200px;
 }
+
+/*--------------flexbox ----------*/
+.parent {
+  border: 5px solid lightcoral;
+}
+
+.item {
+  /*height: 50px;*/
+  margin: 5px;
+  background: DeepSkyBlue;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+
+
+/**** display: flex ****/
+
+
+.example-flex .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.example-flex .item {
+  width: 50px;
+}
+
+
+
+
+/**** flex-direction ****/
+
+
+.example-direction .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.example-direction .item {
+  width: 50px;
+}
+
+
+
+
+/**** flex-wrap ****/
+
+
+.example-wrap .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.example-wrap .item {
+  width: 30%;
+}
+
+
+
+
+
+/**** justify-content ****/
+
+
+.example-justify .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.example-justify .item {
+  width: 50px;
+}
+
+
+
+
+
+/**** align-items ****/
+
+
+.example-align .parent {
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  
+}
+
+.example-align .item {
+  width: 50px;
+}
+
+
+
+
+
+/**** align-content ****/
+
+
+.example-align-content .parent {
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.example-align-content .item {
+  width: 20%;
+}
+
+
+
+
+
+/**** order ****/
+
+
+.example-order .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.example-order .item {
+  width: 50px;
+}
+
+.example-order .item:nth-child(2) {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  background: lightgreen;
+}
+
+
+
+
+
+
+/**** flex-grow ****/
+
+
+.example-grow .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.example-grow .item {
+  width: 50px;
+}
+
+.example-grow .item:nth-child(2) {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background: lightgreen;
+}
+
+
+
+
+
+
+/**** flex-shrink ****/
+
+
+.example-shrink .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.example-shrink .item {
+  width: 200px;
+}
+
+.example-shrink .item:nth-child(2) {
+  -webkit-flex-shrink: 2;
+      -ms-flex-negative: 2;
+          flex-shrink: 2;
+  background: lightgreen;
+}
+
+
+
+
+
+
+/**** flex-basis ****/
+
+
+.example-basis .parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.example-basis .item {
+  width: 200px;
+}
+
+.example-basis .item:nth-child(2) {
+  -webkit-flex-basis: 39px;
+      -ms-flex-preferred-size: 39px;
+          flex-basis: 39px;
+  background: lightgreen;
+}
+
+
+
+
+
+
+/**** align-self ****/
+
+
+.example-align-self .parent {
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.example-align-self .item {
+  width: 50px;
+  height: 50px;
+}
+
+.example-align-self .item:nth-child(2) {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  background: lightgreen;
+}
+
+
+
+
